@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+
+
+    
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/dolce-vita-heavy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="flags">
+            <a href="index-br.html" class="flag-buttons"><img src="../images/brazil-icon.jpg" alt="Brazil Flag" class="flag-images"></a>
+            <a href="../index.html" class="flag-buttons"><img src="../images/usa-icon.jpg" alt="USA Flag" class="flag-images"></a>
+        </div>
+        <header>
+            <h1 id="title">Formulário de Pesquisa</h1>
+            <p id="description">Por favor preencha esse formulário para avaliar nossos cursos.</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+
+            <fieldset>
+                <legend>Suas informações</legend>
+
+                <label for="name" id="name-label">Digite seu nome completo:<input id="name" type="name" placeholder="Nome completo" name="name" required></label>
+                <label for="email" id="email-label">Digite seu email:<input id="email" type="email" placeholder="Email" name="email" required></label>
+                <label for="number" id="number-label">Sua idade: (opcional)<input id="number" type="number" name="age" min="13" max="120" placeholder="Idade"></label>
+                <label for="dropdown">Qual cargo melhor descreve você?<select id="dropdown" name="role" required>
+                        <option value="">(selecione um cargo)</option>
+                        <option value="student">Estudante</option>
+                        <option value="unemployed">Desempregado</option>
+                        <option value="part-time">Trabalhador Meio Período</option>
+                        <option value="full-time">Trabalhador Período Integral</option>
+                        <option value="not-said">Prefiro não dizer</option>
+                        <option value="other">Outro</option>
+                    </select></label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Você recomendaria nossos cursos para algum amigo?</legend>
+                
+                <label for="definitely-recomendation"><input type="radio" name="recomendation-buttons" id="definitely-recomendation" value="definitely-recomendation" class="inline" checked>Definitivamente!</label>
+                <label for="yes-recomendation"><input type="radio" name="recomendation-buttons" id="yes-recomendation" value="yes-recomendation" class="inline">Sim, recomendaria</label>
+                <label for="meh-recomendation"><input type="radio" name="recomendation-buttons" id="meh-recomendation" value="meh-recomendation" class="inline">Acho que sim</label>
+                <label for="no-recomendation"><input type="radio" name="recomendation-buttons" id="no-recomendation" value="no-recomendation" class="inline">Não recomendaria</label>
+                <label for="worse-recomendation"><input type="radio" name="recomendation-buttons" id="worse-recomendation" value="worse-recomendation" class="inline">Claro que não!</label>
+            </fieldset>
+            <fieldset>
+                <legend>Quais cursos você gostaria de aprender conosco?</legend>
+
+                <label for="full-stack"><input type="checkbox" value="full-stack" name="roles" id="full-stack" class="inline">Full-Stack</label>
+                <label for="front-end"><input type="checkbox" value="front-end" name="roles" id="front-end" class="inline">Front-End</label>
+                <label for="back-end"><input type="checkbox" value="back-end" name="roles" id="back-end" class="inline">Back-End</label>
+                <label for="software-engineer"><input type="checkbox" value="software-engineer" name="roles" id="software-engineer" class="inline">Engenheiro de Software</label>
+                <label for="mobile"><input type="checkbox" value="mobile" name="roles" id="mobile" class="inline">Desenvolvedor Mobile</label>
+                <label for="data-engineer"><input type="checkbox" value="data-engineer" name="roles" id="data-engineer" class="inline">Engenheiro de Dados</label>
+                <label for="cybersecurity"><input type="checkbox" value="cybersecurity" name="roles" id="cybersecurity" class="inline">Segurança Cibernética</label>
+                <label for="systems-analyst"><input type="checkbox" value="systems-analyst" name="roles" id="systems-analyst" class="inline">Analista de Sistemas</label>
+            </fieldset>
+            <fieldset>
+                <label for="feedback">
+                    Conte-nos sua experiência e feedback
+                    <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="Eu acho que seus cursos deviam ter..."></textarea>
+                </label>
+            </fieldset>
+            <label><button type="submit" id="submit">Enviar</label>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.cdnfonts.com/css/dolce-vita-heavy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="flags">
+            <a href="pt-br/index-br.html" class="flag-buttons"><img src="images/brazil-icon.jpg" alt="Brazil Flag" class="flag-images"></a>
+            <a href="index.html" class="flag-buttons"><img src="images/usa-icon.jpg" alt="USA Flag" class="flag-images"></a>
+        </div>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this form to evaluate our courses.</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+
+            <fieldset>
+                <legend>Your informations</legend>
+
+                <label for="name" id="name-label">Enter your full name: <input id="name" type="name" placeholder="Full name" name="name" required></label>
+                <label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="Email" name="email" required></label>
+                <label for="number" id="number-label">Your age: (optional) <input id="number" type="number" name="age" min="13" max="120" placeholder="Age"></label>
+                <label for="dropdown">Which role best describes you?<select id="dropdown" name="role" required>
+                        <option value="">(select a role)</option>
+                        <option value="student">Student</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="part-time">Part Time Worker</option>
+                        <option value="full-time">Full Time Worker</option>
+                        <option value="not-said">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select></label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Would you recommend our courses to a friend?</legend>
+                
+                <label for="definitely-recomendation"><input type="radio" name="recomendation-buttons" id="definitely-recomendation" value="definitely-recomendation" class="inline" checked>Definitely!</label>
+                <label for="yes-recomendation"><input type="radio" name="recomendation-buttons" id="yes-recomendation" value="yes-recomendation" class="inline">Yes, I would</label>
+                <label for="meh-recomendation"><input type="radio" name="recomendation-buttons" id="meh-recomendation" value="meh-recomendation" class="inline">I guess so</label>
+                <label for="no-recomendation"><input type="radio" name="recomendation-buttons" id="no-recomendation" value="no-recomendation" class="inline">No, I wouldn't</label>
+                <label for="worse-recomendation"><input type="radio" name="recomendation-buttons" id="worse-recomendation" value="worse-recomendation" class="inline">Of course not!</label>
+            </fieldset>
+            <fieldset>
+                <legend>Which courses would you like to learn with us??</legend>
+
+                <label for="full-stack"><input type="checkbox" value="full-stack" name="courses" id="full-stack" class="inline">Full-Stack</label>
+                <label for="front-end"><input type="checkbox" value="front-end" name="courses" id="front-end" class="inline">Front-End</label>
+                <label for="back-end"><input type="checkbox" value="back-end" name="courses" id="back-end" class="inline">Back-End</label>
+                <label for="software-engineer"><input type="checkbox" value="software-engineer" name="courses" id="software-engineer" class="inline">Software Engineer</label>
+                <label for="mobile"><input type="checkbox" value="mobile" name="courses" id="mobile" class="inline">Mobile Developer</label>
+                <label for="data-engineer"><input type="checkbox" value="data-engineer" name="courses" id="data-engineer" class="inline">Data Engineer</label>
+                <label for="cybersecurity"><input type="checkbox" value="cybersecurity" name="courses" id="cybersecurity" class="inline">Cybersecurity</label>
+                <label for="systems-analyst"><input type="checkbox" value="systems-analyst" name="courses" id="systems-analyst" class="inline">Systems Analyst</label>
+            </fieldset>
+            <fieldset>
+                <label for="feedback">
+                    Tell us your experience and your feedback
+                    <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="I think your courses should have..."></textarea>
+                </label>
+            </fieldset>
+            <label><button type="submit" id="submit">Submit</label>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+    background: fixed grey;
+    background-image: linear-gradient(160deg, rgba(148, 148, 148, 0.5), rgba(0, 0, 0, 0.6)),
+    url(images/background.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    color: #fff;
+
+}
+
+#flags {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.flag-images {
+    width: 30px;
+    border-radius: 50%;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: 0.2s ease-in-out;
+}
+
+.flag-images:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+header {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+#title {
+    font-family: "Dolce Vita Heavy", sans-serif;
+    font-size: 50px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px black;
+    text-decoration: underline 2px black;
+    text-align: center;
+}
+
+#description {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+hr {
+    max-width: 400px;
+}
+
+#survey-form {
+    background-color: #4d4d4d9c;
+    margin: 50px auto 0 auto;
+    width: 100%;
+    padding: 2.5rem 1rem;
+    border-radius: 30px;
+}
+
+@media (min-width: 340px) {
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    form {
+        max-width: 570px;
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 25px;
+    margin-left: 10px;
+    border-bottom: 1px solid #ffffff;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+label {
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+}
+
+input {
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: #fff;
+    padding: 5px;
+}
+
+.inline{
+    width: unset;
+    margin-right: 8px;
+}
+
+#dropdown {
+    margin-left: 1rem;
+    border-radius: 4px;
+    padding: 4px;
+    color: #1b1b1b;
+}
+
+#feedback {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#submit {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    min-width: 300px;
+    padding: 2px;
+    font-weight: 700;
+    background-color: #05a500;
+    color: #fff;
+    border: none;
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
